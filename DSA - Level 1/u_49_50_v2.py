@@ -1,3 +1,11 @@
+'''
+    *
+   *
+  *  
+ *
+*
+'''
+
 def printPattern(n):
     spaces=n-1
     for i in range(n):
