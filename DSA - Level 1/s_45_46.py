@@ -1,3 +1,11 @@
+'''
+*** ***
+**   **
+*     *
+**   **
+*** ***
+'''
+
 def printPattern(n):
     stars=(n//2)+1
     spaces=1
