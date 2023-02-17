@@ -1,3 +1,10 @@
+'''
+1     1
+12   21
+123 321
+1234321
+'''
+
 def printPatternStars(n):
     stars=1
     spaces=2*n-3
