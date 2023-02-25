@@ -13,7 +13,7 @@ def convertToBase(num,base):
 if __name__ == '__main__':
     num=634
     # base=8
-    # base=9
-    base=12
+    base=9
+    # base=12
     result=convertToBase(num,base)
     print(f"{num} in base {base} is {result}")
