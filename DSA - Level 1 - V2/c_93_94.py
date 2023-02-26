@@ -25,3 +25,7 @@ if __name__ == '__main__':
     arr=[1,2,3,4,5]
     result=findSpan(arr,n)
     print(result)
+    n=6
+    arr=[15,30,40,4,11,9]
+    result=findSpan(arr,n)
+    print(result)
