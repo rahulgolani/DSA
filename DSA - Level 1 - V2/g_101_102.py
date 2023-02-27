@@ -13,8 +13,11 @@ def getDifference(n1,a1,n2,a2):
         carry=1 if dig1<dig2 else 0
         n1-=1
         n2-=1
+        if n1==0 and dig==0:
+            continue
         diffArr.insert(0,dig)
-    return int(''.join(map(str,diffArr)))
+    return diffArr
+    # return int(''.join(map(str,diffArr)))
 
 if __name__ == '__main__':
     n1=int(input('Enter Size of Array 1'))
