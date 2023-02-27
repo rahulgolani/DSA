@@ -14,7 +14,7 @@ def getDifference(n1,a1,n2,a2):
         n1-=1
         n2-=1
         diffArr.insert(0,dig)
-    return diffArr
+    return int(''.join(map(str,diffArr)))
 
 if __name__ == '__main__':
     n1=int(input('Enter Size of Array 1'))
