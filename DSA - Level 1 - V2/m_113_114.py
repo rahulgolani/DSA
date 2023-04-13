@@ -7,6 +7,7 @@ def findNextSmallerElementLeft(arr,n,nsel):
             nsel[i]=stack[-1]
         else:
             nsel[i]=-1
+            # nsel[i]=0
         stack.append(i)
 
 def findNextSmallerElementRight(arr,n,nser):
@@ -17,7 +18,8 @@ def findNextSmallerElementRight(arr,n,nser):
         if len(stack)>0:
             nser[i]=stack[-1]
         else:
-            nser[i]=-1
+            # nser[i]=-1
+            nser[i]=n
         stack.append(i)
 
 def findLargestAreaHistogram(arr,n):
@@ -27,15 +29,16 @@ def findLargestAreaHistogram(arr,n):
     findNextSmallerElementRight(arr,n,nser)
     largestArea=float('-infinity')
     for i in range(n):
-        area=0
-        if nser[i]==-1:
-            area+=(n-i)*arr[i]
-        else:
-            area+=(nser[i]-i)*arr[i]
-        if nsel[i]==-1:
-            area+=(i)*arr[i]
-        else:
-            area+=(i-nsel[i]-1)*arr[i]
+        # area=0
+        # if nser[i]==-1:
+        #     area+=(n-i)*arr[i]
+        # else:
+        #     area+=(nser[i]-i)*arr[i]
+        # if nsel[i]==-1:
+        #     area+=(i)*arr[i]
+        # else:
+        #     area+=(i-nsel[i]-1)*arr[i]
+        area=(nser[i]-nsel[i]-1)*arr[i]
         largestArea=max(area,largestArea)
     return largestArea
 
